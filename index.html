@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando as Tags Semânticas do HTML</title>
+    <meta name="description" content="Uma página demonstrando o uso extensivo de HTML semântico e práticas de acessibilidade, continuando a pesquisa sobre o tema.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon_512.png" type="image/x-icon">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo-semantica.png" alt="Logotipo Ilustrativo: Símbolo de código representando HTML Semântico">
+                <h1><a href="index.html" rel="home">HTML Semântico & Acessibilidade</a></h1>
+            </div>
+            <nav aria-label="Navegação Principal">
+                <button aria-expanded="false" aria-controls="menu-principal" class="menu-toggle">
+                    <span class="visually-hidden">Abrir menu</span>
+                    <span class="hamburger-icon"></span>
+                </button>
+                <ul id="menu-principal">
+                    <li><a href="#o-que-sao">O Que São?</a></li>
+                    <li><a href="#principais-tags">Principais Tags</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#acessibilidade-css">Acessibilidade CSS</a></li>
+                    <li><a href="#referencias-site">Referências</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container main-container">
+        <article>
+            <header class="page-article-header">
+                <h2>A Profundidade da Web Semântica e Acessível</h2>
+                <p class="subtitle">Uma extensão da nossa pesquisa sobre a correta estruturação de páginas HTML.</p>
+            </header>
+
+            <section id="o-que-sao" aria-labelledby="section-title-o-que-sao">
+                <h3 id="section-title-o-que-sao">O Que São Tags Semânticas?</h3>
+                <p>As tags semânticas do HTML5 são elementos que carregam significado intrínseco sobre o conteúdo que envolvem. Elas não apenas estruturam a página, mas também descrevem o propósito de cada bloco para navegadores, tecnologias assistivas e desenvolvedores. Pense nelas como os tijolos de significado que constroem uma web mais inteligente e compreensível.</p>
+                <p>Diferentemente de um <code>&lt;div&gt;</code> genérico, que é como uma caixa sem rótulo, tags como <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>, ou <code>&lt;footer&gt;</code> comunicam claramente: "isto é um artigo independente", "esta é a navegação principal", "este é o rodapé".</p>
+            </section>
+
+            <section id="principais-tags" aria-labelledby="section-title-principais-tags">
+                <h3 id="section-title-principais-tags">Explorando as Principais Tags Semânticas</h3>
+                <div class="grid-tags">
+                    <div class="tag-card">
+                        <h4><code>&lt;header&gt;</code></h4>
+                        <p>Define o cabeçalho de uma página ou seção. Geralmente contém logotipos, títulos e navegação introdutória.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;nav&gt;</code></h4>
+                        <p>Agrupa os principais links de navegação, essenciais para a orientação do usuário e de tecnologias assistivas.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;main&gt;</code></h4>
+                        <p>Delimita o conteúdo principal e único da página. Deve haver apenas um por página.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;article&gt;</code></h4>
+                        <p>Para conteúdo independente e autocontido, como posts de blog, notícias ou comentários.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;section&gt;</code></h4>
+                        <p>Agrupa conteúdo tematicamente relacionado. É como um capítulo dentro do seu documento.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;aside&gt;</code></h4>
+                        <p>Conteúdo complementar, como barras laterais, publicidade ou notas relacionadas.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;footer&gt;</code></h4>
+                        <p>O rodapé da página ou de uma seção, contendo informações de autoria, copyright, etc.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code></h4>
+                        <p>Para embutir conteúdo ilustrativo (imagens, diagramas) com uma legenda associada.</p>
+                    </div>
+                    <div class="tag-card">
+                        <h4><code>&lt;time&gt;</code></h4>
+                        <p>Representa datas e/ou horários de forma que possam ser lidos por máquinas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="importancia" aria-labelledby="section-title-importancia">
+                <h3 id="section-title-importancia">Por Que a Semântica é Crucial?</h3>
+                <ul>
+                    <li><strong>Acessibilidade (a11y):</strong> Leitores de tela e outras tecnologias assistivas dependem da semântica para interpretar e apresentar o conteúdo de forma lógica aos usuários com deficiência. Uma estrutura clara permite navegação eficiente.</li>
+                    <li><strong>SEO (Otimização para Motores de Busca):</strong> Motores de busca utilizam a semântica para entender a hierarquia e relevância do conteúdo, o que pode impactar positivamente o ranqueamento da página.</li>
+                    <li><strong>Manutenção do Código:</strong> Um código semântico é mais legível, organizado e fácil de manter por desenvolvedores, facilitando colaborações e atualizações futuras.</li>
+                    <li><strong>Interoperabilidade:</strong> Garante que diferentes navegadores e dispositivos interpretem a página de forma mais consistente.</li>
+                </ul>
+            </section>
+
+             <section id="acessibilidade-css" aria-labelledby="section-title-acessibilidade-css">
+                <h3 id="section-title-acessibilidade-css">CSS e Acessibilidade: Aliados Indispensáveis</h3>
+                <p>Além do HTML semântico, o CSS desempenha um papel vital na acessibilidade. Boas práticas incluem:</p>
+                <ul>
+                    <li><strong>Contraste de Cores:</strong> Garantir que haja contraste suficiente entre o texto e o fundo (mínimo de 4.5:1 para texto normal, 3:1 para texto grande, conforme WCAG).</li>
+                    <li><strong>Foco Visível:</strong> Elementos interativos devem ter um indicador de foco claro e visível para usuários que navegam via teclado.</li>
+                    <li><strong>Unidades Relativas:</strong> Usar unidades como <code>em</code> ou <code>rem</code> para fontes permite que os usuários ajustem o tamanho do texto conforme sua necessidade.</li>
+                    <li><strong>Não depender apenas de cor:</strong> Informações importantes não devem ser transmitidas exclusivamente por meio de cores (ex: status de erro). Utilize também ícones, texto ou padrões.</li>
+                    <li><strong>Layout Responsivo:</strong> O design deve se adaptar a diferentes tamanhos de tela e orientações, garantindo a legibilidade e usabilidade em todos os dispositivos.</li>
+                </ul>
+                <figure role="group">
+                    <img src="images/contraste-exemplo.png" alt="Exemplo de bom e mau contraste de cores em texto. Texto claro em fundo claro é ruim, texto escuro em fundo claro é bom.">
+                    <figcaption>Exemplo visual de contraste de cores. Um bom contraste é essencial para a legibilidade.</figcaption>
+                </figure>
+            </section>
+
+
+            <section id="download-pesquisa" aria-labelledby="section-title-download">
+                <h3 id="section-title-download">Acesse a Pesquisa Completa 📖</h3>
+                <p>Para um estudo mais aprofundado sobre HTML Semântico e Acessibilidade, e para ver a base teórica deste projeto prático, faça o download da pesquisa completa em formato PDF.</p>
+                <a href="danielcorte_pesquisa.pdf" download="Daniel_Corte_TAGs_Semanticas.pdf" class="btn download-btn" title="Baixar a pesquisa completa em formato PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="vertical-align: text-bottom; margin-right: 8px;">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                    Baixar Pesquisa Completa (PDF)
+                </a>
+                <p><small><em><strong>Importante:</strong> Corrija com carinho <3 .</em></small></p>
+            </section>
+        </article>
+
+        <aside role="complementary">
+            <div class="aside-sticky-content">
+                <h4>Tópicos da Pesquisa</h4>
+                <nav aria-label="Navegação secundária da página">
+                    <ul>
+                        <li><a href="#o-que-sao">Definição de Semântica</a></li>
+                        <li><a href="#principais-tags">Tags em Detalhe</a></li>
+                        <li><a href="#importancia">A Importância Real</a></li>
+                        <li><a href="#acessibilidade-css">CSS Acessível</a></li>
+                    </ul>
+                </nav>
+                <section class="related-links" aria-labelledby="related-links-title">
+                    <h4 id="related-links-title">Recursos Adicionais</h4>
+                    <ul>
+                        <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">Diretrizes WCAG <span class="visually-hidden">(abre em nova aba)</span></a></li>
+                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank" rel="noopener noreferrer">MDN HTML Elements <span class="visually-hidden">(abre em nova aba)</span></a></li>
+                        <li><a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer">Verificador de Contraste WebAIM <span class="visually-hidden">(abre em nova aba)</span></a></li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container footer-container">
+            <section id="referencias-site" aria-labelledby="footer-referencias-title">
+                <h4 id="footer-referencias-title">Referências da Pesquisa</h4>
+                <p>Esta página é uma consolidação e extensão da pesquisa sobre HTML Semântico e Acessibilidade, baseada em fontes como MDN Web Docs, W3C/WAI e artigos de especialistas da área.</p>
+            </section>
+            <div class="copyright">
+                <p>&copy; <time datetime="2025">2025</time> Projeto HTML Semântico. Desenvolvido com foco em aprendizado e boas práticas.</p>
+                <address>
+                    Contato: <a href="github.com/danielcorte">github.com/danielcorte</a>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script simples para menu hamburguer (exemplo básico)
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuPrincipal = document.getElementById('menu-principal');
+
+        if (menuToggle && menuPrincipal) {
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true' || false;
+                this.setAttribute('aria-expanded', !isExpanded);
+                menuPrincipal.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
